@@ -1,0 +1,327 @@
+body {
+    padding-top: 5rem;
+    font-family: 'Satoshi', sans-serif;
+    background-color: #201C3A;
+    color: #FFD196;
+    padding-bottom: 10rem;
+  }
+  
+  /* NAV MENU */
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFD196;
+    color: #201C3A;
+    height: 4rem;
+    z-index: 999;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+  }
+  
+  .logo {
+    height: 4rem;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .logo img:hover {
+    transform: rotate(-90deg);
+  }
+  
+  .logo-text {
+    font-size: 1.8rem;
+    font-weight: regular;
+    padding-top: 0rem;
+    padding-left: 0.5rem;
+  }
+  
+  .right-section ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 2rem;
+  }
+  
+  .right-section a {
+    color: #201C3A;
+    text-decoration: none;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right-section a i {
+    margin-bottom: 5px;
+  }
+  
+  .right-section a span {
+    text-align: center;
+  }
+
+  .right-section li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .Hjem {
+    height: 3rem;
+    margin-bottom: 0.2rem;
+    display: none;
+  }
+
+  .Hjemtext {
+    display: none;
+  }
+  
+  .Hjem:hover {
+    height: 4rem;
+  }
+  
+  .Arkiv {
+    height: 3rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .Arkiv:hover {
+    height: 4rem;
+  }
+  
+  .Kalender {
+    height: 3rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .Kalender:hover {
+    height: 4rem;
+  }
+  
+  .DinBolig {
+    height: 3rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .DinBolig:hover {
+    height: 4rem;
+  }
+  
+  
+  /* BOLIGTJENESTENE */
+  
+  .Boligtjenester {
+    text-align: center;
+    padding-top: 4rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icon-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon img {
+    height: 10rem;
+  }
+
+  .icon img:hover {
+    height: 11rem;
+  }
+
+  .flyttebil img{
+    padding-top: 1.2rem;
+    height: 9.5rem;
+  }
+
+
+   .tredeskanner img{
+    padding-top: 1rem;
+    height: 8.7rem;
+  } 
+
+
+  .text {
+    color: #FFD196;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+  }
+
+ .text:hover {
+    font-weight: bold;
+    color: #84D5BA;
+    text-decoration: underline;
+ }
+
+a{
+    text-decoration: none;
+}
+
+.flyttetext {
+    margin-top: -0.8rem;
+}
+
+
+  /* Film */
+  .Undertittel {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  #videoPlayer {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .Boligtjenestevideo {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* FOOTER*/
+
+footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem; /* Adjust the height as needed */
+}
+
+  .Loggut {
+    padding: 1.32rem 8rem;
+    margin-top: 10rem;
+    background-color: #FFD196;
+    color: #201C3A;
+    font-size: 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .Loggut:hover {
+    background-color: #23635E;
+    color: #fff;
+  }
+
+  /* RESPONSIVE STYLES */
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 2rem;
+    }
+  
+    .column {
+      flex-basis: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    #videoPlayer {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      max-height: 60vh;
+    }
+  }
+
+  @media screen and (min-width: 1180px) {
+.container {
+    padding: 0 5rem 0 5rem;
+}
+
+.row {
+margin-left: 6rem;
+margin-right: 6rem;
+  }
+  }
+    
+  @media screen and (max-width: 1000px) {
+
+    
+    header {
+        position: relative;
+        height: 0%;
+        background-color:#201C3A;
+        margin: -4rem;
+      }
+    
+    .left-section {
+        display: none;
+    }
+  
+    .right-section {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #FFD196;
+      color: #201C3A;
+      height: 5rem;
+      z-index: 999;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1rem 0.5rem 0;
+    }
+  
+    .right-section ul {
+      justify-content: space-between;
+      padding: 0;
+    }
+  
+    .right-section a {
+      margin: 2.2rem;
+    }
+
+    .Hjem {
+        height: 3rem;
+        margin-bottom: 0.2rem;
+        display: flex;
+      }
+    
+      .Hjemtext {
+        display:flex;
+      }
+
+      .icon-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+      }
+      
+   
+  }
+
+ 
