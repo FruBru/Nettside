@@ -114,6 +114,13 @@ header {
   padding-top: 4rem;
 }
 
+.slogan, h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: lighter;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -173,7 +180,7 @@ a {
 /* Film */
 .Undertittel {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 #videoPlayer {

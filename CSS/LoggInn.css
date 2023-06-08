@@ -72,6 +72,11 @@ body {
     cursor: pointer;
     text-align: center;
   }
+
+  #user-type {
+    height: 4rem;
+    width: 26rem;
+  }
  
   
   label {
@@ -81,6 +86,7 @@ body {
   .brukernavn, .passord{
     margin-top: 3rem;
     text-align: center;
+    font-weight: lighter;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -101,15 +107,14 @@ body {
   }
 
   .button {
-    padding: 1.32rem 7rem;
-    background-color: #84D5BA;
+    padding: 1.32rem 10.5rem;
+    background-color: #65D570;
     color: #201C3A;
     font-size: 2rem;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-top: 10rem;
   }
 
   .button:hover {
